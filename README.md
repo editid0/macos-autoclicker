@@ -12,6 +12,9 @@
 
 # Config options
 `clicks` = Number of times to click
+
 `gap` = Time (in seconds) to wait between clicks, can be a decimal
+
 `side` = Left or right mouse button
+
 `dual` = Yes or no, whether or not to double click each time
