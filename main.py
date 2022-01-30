@@ -44,20 +44,16 @@ with open('config.txt', 'r') as f:
         time.sleep(5)
         print('Clicking {} times with a gap of {} and using the {} mouse button.'.format(clicks, gap, side))
 
-for i in range(clicks):
+for _ in range(clicks):
     if side == 'left':
         if dual == 'yes':
             mouse.click(Button.left, 1)
-            mouse.click(Button.left, 1)
-        else:
-            mouse.click(Button.left, 1)
+        mouse.click(Button.left, 1)
         time.sleep(gap)
     elif side == 'right':
         if dual == 'yes':
             mouse.click(Button.right, 1)
-            mouse.click(Button.right, 1)
-        else:
-            mouse.click(Button.right, 1)
+        mouse.click(Button.right, 1)
         time.sleep(gap)
     else:
         print('Invalid mouse button side')
